@@ -13,6 +13,11 @@ pipeline {
         echo "build the code"
       }
     }
+    stage('input') {
+      steps {
+        input('do you want to continue?')
+      }
+    }
     stage('deploy') {
       steps {
         echo "deploy the code"
