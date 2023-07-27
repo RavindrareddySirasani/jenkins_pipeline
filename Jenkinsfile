@@ -5,7 +5,7 @@ pipeline {
   stages {
     stage('git checkout') {
       steps {
-        sh "echo 'this is download git code from github'>file4.txt"
+        echo 'this is download git code from github'
       }
     }
     stage('build') {
