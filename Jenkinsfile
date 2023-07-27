@@ -22,6 +22,9 @@ pipeline {
   post {
     always {
       echo "all stages are processing"
+      mail to: 'ravindra738738@gmail.com'
+           subject: 'pipeline status'
+           body: 'pipeline processing'
     }
   }
 }
