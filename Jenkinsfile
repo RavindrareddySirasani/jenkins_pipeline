@@ -1,6 +1,6 @@
 pipeline {
   agent {
-    label 'slave1'
+    label 'slave2'
   }
   stages {
     stage('git checkout') {
@@ -11,6 +11,7 @@ pipeline {
     stage('build') {
       steps {
         echo "build the code"
+        sh "echo 'file1 content'>abc.txt"
       }
     }
     stage('input') {
