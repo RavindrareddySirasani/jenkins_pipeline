@@ -19,9 +19,10 @@ pipeline {
       }
     }
   }
-}
-post {
-  always {
-    echo "all stages are processing"
+  post {
+    always {
+      echo "all stages are processing"
+    }
   }
 }
+
