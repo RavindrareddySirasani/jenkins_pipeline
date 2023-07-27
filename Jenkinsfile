@@ -8,12 +8,12 @@ pipeline {
         sh "echo 'this is download git code from github'>file4.txt"
       }
     }
-    stage {
+    stage('build') {
       steps {
         echo "build the code"
       }
     }
-    stage {
+    stage('deploy') {
       steps {
         echo "deploy the code"
       }
